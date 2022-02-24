@@ -24,7 +24,18 @@ module.exports = {
 			{
 				test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
 				use: ["style-loader", "css-loader"]
-			}
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+				  {
+					loader: 'file-loader',
+					options: {
+						outputPath: '/images',
+					},
+				  },
+				],
+			},
 		]
 	},
 	plugins: [

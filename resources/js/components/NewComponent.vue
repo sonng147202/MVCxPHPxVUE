@@ -1,9 +1,17 @@
 <template>
-	<h1>Đây component NEW</h1>
+	<div>
+		<img :src="image" alt="sao z">
+	</div>
 </template>
 
 <script>
+	import Avatar from "../../img/avatar_default.png";
 	export default {
+		data: function () {
+            return {
+                image: Avatar
+            }
+        },
 		name: 'New',
 	};
 </script>
