@@ -1,12 +1,12 @@
 <?php
 
-//  * app path
 define('APPPATH', dirname(__FILE__));
 
-//  * core path
-define('COREPATH', APPPATH.DIRECTORY_SEPARATOR.'core');
+define('COREPATH', APPPATH . DIRECTORY_SEPARATOR . 'core');
 
-require COREPATH.DIRECTORY_SEPARATOR.'appload.php';
+define('CONFIGPATH', APPPATH.DIRECTORY_SEPARATOR . 'config');
+
+require COREPATH . DIRECTORY_SEPARATOR . 'appload.php';
 
 
 

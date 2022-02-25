@@ -1,6 +1,10 @@
 <?php
+namespace App\Models;
 
-class IndexModel extends Model
+class IndexModel
 {
-    
+    public static function index()
+    {
+        echo 'đây là indexModel';
+    }
 }

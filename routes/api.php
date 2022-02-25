@@ -1,15 +1,14 @@
 <?php
 
-namespace Core\Available;
+use Core\Available\Route;
+use App\Controllers\IndexController;
 
 Route::get('/', function () {
-    echo '<h1>Home</h1>';
+    echo '<pre>';
+    print_r($_SERVER);
 });
 
-
-Route::get('/about', function () {
-    echo '<h1>About</h1>';
-});
+Route::get('/about', [IndexController::class, 'index']);
 
 Route::post('/', function () {
     echo '<h1>POST</h1>';

@@ -6,5 +6,3 @@ $db = [
     'password' => '',
     'database' => 'pizzeria',
 ];
-
-

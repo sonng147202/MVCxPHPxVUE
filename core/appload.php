@@ -1,28 +1,32 @@
 <?php
 defined('APPPATH') OR exit('Không được quyền truy cập phần này');
 
-// CONFIGPATH
-define('CONFIGPATH', APPPATH.DIRECTORY_SEPARATOR.'config');
+require COREPATH . DIRECTORY_SEPARATOR . 'base.php';
 
-// Include file config/path
-require CONFIGPATH . DIRECTORY_SEPARATOR . 'path.php';
+load_folder(CONFIGPATH);
 
-// Include file config/database
-require CONFIGPATH . DIRECTORY_SEPARATOR . 'database.php';
+load_folder(COREPATH . DIRECTORY_SEPARATOR . 'available');
 
-// Include file config/email
-require CONFIGPATH . DIRECTORY_SEPARATOR . 'mail.php';
+if (is_array($autoload)) {
+    foreach ($autoload as $type => $list_auto) {
+        if (!empty($list_auto)) {
+            foreach ($list_auto as $name) {
+                load_storage($type, $name);
+            }
+        }
+    }
+}
 
-// Include file config/autoload
-require CONFIGPATH . DIRECTORY_SEPARATOR . 'autoload.php';
+// // CONTROLLERS
+load_folder(FAPPPATH . DIRECTORY_SEPARATOR . 'controllers');
 
-// // Include core available/Route
-require COREPATH . DIRECTORY_SEPARATOR . 'available' . DIRECTORY_SEPARATOR . 'Route.php';
+// // MODELS
+load_folder(FAPPPATH . DIRECTORY_SEPARATOR . 'models');
 
-// // Include core routes/web
+// // API
 require ROUTESPATH . DIRECTORY_SEPARATOR . 'api.php';
 
-// // Include public/index "VIEW MAIN"
+// // LOAD VIEW
 require PUBLICPATH.DIRECTORY_SEPARATOR.'index.php';
 
 

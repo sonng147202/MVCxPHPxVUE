@@ -1,6 +1,8 @@
 <?php
 defined('APPPATH') OR exit('Không được quyền truy cập phần này');
 
-$autoload['lib'] = ['mail'];
+global $autoload;
+
+$autoload['libraries'] = ['mail'];
 
 $autoload['helper'] = ['data', 'format', 'prem'];
