@@ -9,5 +9,9 @@ class IndexController
     {
         echo '<h1>About</h1>';
         IndexModel::index();
+
+        echo '<pre>';
+        print_r($_SERVER);
+
     }
 }

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<img :src="image" alt="sao z">
+		<img :src="image" alt="..." width="50" height="50">
 	</div>
 </template>
 

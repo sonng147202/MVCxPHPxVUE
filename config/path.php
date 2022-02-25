@@ -11,3 +11,7 @@ define('ROUTESPATH', APPPATH.DIRECTORY_SEPARATOR.$routes_folder);
 //  * public path
 $public_folder = 'public';
 define('PUBLICPATH', APPPATH.DIRECTORY_SEPARATOR.$public_folder);
+
+//  * resources path
+$resources_folder = 'resources';
+define('RESOURCESPATH', APPPATH.DIRECTORY_SEPARATOR.$resources_folder);

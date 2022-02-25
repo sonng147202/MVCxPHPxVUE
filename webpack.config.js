@@ -22,7 +22,7 @@ module.exports = {
 				} 
 			},
 			{
-				test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
+				test: /\.css$/,
 				use: ["style-loader", "css-loader"]
 			},
 			{

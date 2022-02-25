@@ -25,22 +25,3 @@ load_folder(FAPPPATH . DIRECTORY_SEPARATOR . 'models');
 
 // // API
 require ROUTESPATH . DIRECTORY_SEPARATOR . 'api.php';
-
-// // LOAD VIEW
-require PUBLICPATH.DIRECTORY_SEPARATOR.'index.php';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -17,3 +17,9 @@ function load_storage($type, $name)
         require "$path";
 }
 
+function view($name)
+{
+    $path = RESOURCESPATH . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . "{$name}.php";
+    if (file_exists($path))
+        require "$path";
+}
