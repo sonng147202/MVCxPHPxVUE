@@ -19,7 +19,7 @@ function load_storage($type, $name)
 
 function view($name)
 {
-    $path = RESOURCESPATH . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . "{$name}.php";
+    $path = RESOURCESPATH . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . "{$name}.blade.php";
     if (file_exists($path))
         require "$path";
 }
