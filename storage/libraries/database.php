@@ -9,7 +9,7 @@ class DB
         $this->connection(func_get_args());
     }
 
-    function connection($db)
+    public function connection($db)
     {
         $this->conn = new mysqli($db[0], $db[1], $db[2], $db[3]);
     }

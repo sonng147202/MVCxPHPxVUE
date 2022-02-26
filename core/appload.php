@@ -7,9 +7,6 @@ require COREPATH . DIRECTORY_SEPARATOR . 'base.php';
 // // CONFIG
 load_folder(CONFIGPATH);
 
-// // COREO/AVAILABLE
-load_folder(COREPATH . DIRECTORY_SEPARATOR . 'available');
-
 // // AUTOLOAD
 if (is_array($autoload)) {
     foreach ($autoload as $type => $list_auto) {
@@ -20,6 +17,15 @@ if (is_array($autoload)) {
         }
     }
 }
+
+// // CONNECT DB
+new DB(HOST, USER, PASSWORD, NAME);
+
+// // START SESSION
+session_start();
+
+// // CORE/AVAILABLE
+load_folder(COREPATH . DIRECTORY_SEPARATOR . 'available');
 
 // // CONTROLLERS
 load_folder(FAPPPATH . DIRECTORY_SEPARATOR . 'controllers');

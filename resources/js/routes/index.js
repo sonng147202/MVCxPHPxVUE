@@ -1,5 +1,6 @@
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Data from '../views/Data.vue'
 
 export const routes = [
     { 
@@ -9,5 +10,9 @@ export const routes = [
     { 
         path: '/about', 
         component: About 
+    },
+    { 
+        path: '/data', 
+        component: Data 
     }
 ]

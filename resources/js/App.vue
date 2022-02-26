@@ -8,6 +8,9 @@
             <li>
 			    <router-link tag="a" to="/about">Go to About</router-link>
             </li>
+            <li>
+			    <router-link tag="a" to="/data">Go to Data</router-link>
+            </li>
 		</ul>
         <router-view/>
     </div>

@@ -3,6 +3,13 @@ defined('APPPATH') OR exit('Không được quyền truy cập phần này');
 
 global $autoload;
 
-$autoload['libraries'] = ['mail'];
+$autoload['libraries'] = [
+    'database',
+    'mail'
+];
 
-$autoload['helper'] = ['data', 'format', 'prem'];
+$autoload['helper'] = [
+    'data', 
+    'format', 
+    'prem'
+];
