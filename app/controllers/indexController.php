@@ -5,13 +5,8 @@ use App\Models\IndexModel;
 
 class IndexController
 {
-    public static function index()
+    public function index()
     {
-        echo '<h1>About</h1>';
-        IndexModel::index();
-
-        echo '<pre>';
-        print_r($_SERVER);
-
+        view('index');
     }
 }

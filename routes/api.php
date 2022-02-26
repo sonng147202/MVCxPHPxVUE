@@ -3,6 +3,4 @@
 use Core\Available\Route;
 use App\Controllers\IndexController;
 
-Route::get('/', function () {
-    view('index');
-});
+Route::get('/', [IndexController::class, 'index']);
