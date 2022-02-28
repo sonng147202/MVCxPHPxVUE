@@ -19,7 +19,7 @@ if (is_array($autoload)) {
 }
 
 // // CONNECT DB
-new DB(HOST, USER, PASSWORD, NAME);
+// new DB(HOST, USER, PASSWORD, NAME);
 
 // // START SESSION
 session_start();

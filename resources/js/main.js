@@ -8,10 +8,7 @@ import App from './App.vue';
 
 Vue.use(VueRouter)
 
-Vue.config.productionTip = false
-
 const router = new VueRouter({
-    mode: 'history',
     routes 
 })
 
